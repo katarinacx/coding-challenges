@@ -1,0 +1,24 @@
+{
+    "name": "four-card-feature-section",
+    "version": "1.0.0",
+    "description": "Layout based challenge. Multi-column and responsive layouts",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack"
+    },
+    "author": "Tarin",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "jshint": "^2.11.0",
+        "server": "^1.0.27"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.10.3"
+    }
+}

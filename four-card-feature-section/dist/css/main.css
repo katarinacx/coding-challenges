@@ -9,7 +9,7 @@ body {
 .cards {
     background-color: #fff;
     height: 230px;
-    margin: 30px;
+    margin: 10px 30px 10px 30px;
     border-radius: 8px;
     box-shadow: 0px 14px 27px -10px rgba(129,140,161,0.5);
 }
@@ -17,13 +17,29 @@ body {
 .cards::before {
     content: "";
     display: block;
-    border-top: 4px solid rgb(69, 211, 211);
     border-radius: 8px;
     padding-top: 8px;
 }
 
+.cards.supervisor::before {
+    border-top: 4px solid rgb(69, 211, 211);
+}
+
+.cards.team-builder::before {
+    border-top: 4px solid rgb(234, 83, 83);
+
+}
+
+.cards.karma::before {
+    border-top: 4px solid rgb(252, 175, 74);
+}
+
+.cards.calculator::before {
+    border-top: 4px solid rgb(84, 158, 242);
+}
+
 .content-container {
-    padding: 15px 45px;
+    padding: 15px 40px;
 }
 
 h5 {
@@ -34,4 +50,32 @@ p {
     font-weight: 400;
     font-size: 13px;
     color: #a3a5ae;
+}
+
+img {
+    float: right;
+    margin-right: 25px;
+}
+
+.title-one, .title-two, .description {
+    padding: 0 30px;
+}
+
+.title-one {
+    font-weight: 200;
+    color: #4c4e61;
+    padding-top: 30px;
+}
+
+.title-two {
+    color: #4c4e61;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    max-width: 600px;
+    display: inline-block;
 }

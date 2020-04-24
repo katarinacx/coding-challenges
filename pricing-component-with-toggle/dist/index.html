@@ -2,13 +2,44 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <title>Pricing Component with Toggle</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Our Pricing</h3>
+            </div>
+        </div>
+        <div class="row switch-row">
+            <div class="col-12">
+                <span class="switch-label">Annually</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="switch-label">Monthly</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card basic">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card professional">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card master">
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>

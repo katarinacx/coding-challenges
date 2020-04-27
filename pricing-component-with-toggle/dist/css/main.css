@@ -6,14 +6,15 @@ body {
     overflow-x: hidden;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 h3 {
     padding-top: 60px;
     margin-bottom: 30px;
     color: #6d708d;
+    font-size: 30px;
 }
-
 
 /* Toggle button */
 .switch-label {
@@ -21,14 +22,16 @@ h3 {
     display: inline-block;
     height: 34px;
     vertical-align: bottom;
-    font-size: 13px;
+    font-size: 15px;
     color: #b3b5c6;
 }
 
+/* This is for the toggle at the top */
 .switch-row {
     margin-bottom: 40px;
 }
 
+/* This is for the toggle itself, couldn't name it toggle as there's already a bootstrap class called toggle */
 .switch {
     position: relative;
     display: inline-block;
@@ -90,17 +93,80 @@ h3 {
 
   /* Cards */
   .card {
-    height: 300px;
     background-color: #fff;
     margin-bottom: 20px;
     border: none;
     border-radius: 10px;
+    padding: 30px;
   }
 
-  .basic, .master {
-    
+  .currency {
+    font-size: 40px;
+    color: #494c5f;
+    line-height: 85px;
+    vertical-align: top;
+    letter-spacing: 4px;
+  }
+
+  .label-row, .info-row {
+    color: #6d708d;
+  }
+
+  .info-row p {
+    padding-top: 15px;
+    border-top: 1px solid #f6f6fe;
+  }
+
+  .info-row.last {
+    margin-bottom: 20px;
+  }
+
+  .info-row.last p {
+    border-bottom: 1px solid #f6f6fe;
+    padding-bottom: 15px;
+  }
+
+  .card .label-row {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .price-row {
+    margin-bottom: 30px;
+  }
+
+  .price {
+    color: #494c5f;
+    font-size: 69px;
+    display: inline;
+  }
+
+  .learn-more {
+    width: 100%;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: #fff;
+    border: none;
+    outline: none !important;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 2px;
   }
 
   .card.professional {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  }
+
+  .card.professional .currency, .card.professional .label-row, .card.professional .info-row, .card.professional .price{
+    color: #fff;
+  }
+  
+  .card.professional .learn-more {
+    background: #fff;
+  }
+
+  .card.professional .learn-more span {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }

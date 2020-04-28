@@ -153,6 +153,19 @@ h3 {
     letter-spacing: 2px;
   }
 
+  .learn-more:hover {
+    background: #fff;
+    border: 3px solid;
+    border-image-source: linear-gradient(to left, #a3a8f0 0%, #696fdd 100%) !important;
+    border-image-slice: 1;
+  }
+
+  .learn-more:hover span {
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .card.professional {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   }

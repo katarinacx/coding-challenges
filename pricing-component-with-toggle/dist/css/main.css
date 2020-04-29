@@ -48,6 +48,7 @@ h3 {
     height: 0;
   }
   
+  /* This is for the inside of the toggle */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -141,11 +142,13 @@ h3 {
     display: inline;
   }
 
+  /* Learn more buttons */
   .learn-more {
     display: block;
     position: relative;
     width: 100%;
     z-index: 1;
+    /* Border box does around the outside, padding box does in the middle */
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%)) border-box, linear-gradient(#FFF, #FFF) padding-box;
     color: #fff;
     border: 3px solid transparent;

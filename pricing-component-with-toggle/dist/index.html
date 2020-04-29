@@ -19,14 +19,14 @@
             <div class="col-12">
                 <span class="switch-label">Annually</span>
                 <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
+                    <input id="price-type" type="checkbox">
+                    <span class="slider round" onclick="togglePriceType();"></span>
                 </label>
                 <span class="switch-label">Monthly</span>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 outer">
                 <div class="card basic">
                     <div class="row label-row">
                         <div class="col-12">
@@ -35,7 +35,8 @@
                     </div>
                     <div class="row price-row">
                         <div class="col-12">
-                            <span class="currency">£</span><h1 class="price">199.99</h1>
+                            <span class="currency yearly">£</span><h1 class="price yearly">199.99</h1>
+                            <span class="currency monthly">£</span><h1 class="price monthly">19.99</h1>
                         </div>
                     </div>
                     <div class="row info-row">
@@ -60,7 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 inner">
                 <div class="card professional">
                     <div class="row label-row">
                         <div class="col-12">
@@ -69,7 +70,8 @@
                     </div>
                     <div class="row price-row">
                         <div class="col-12">
-                            <span class="currency">£</span><h1 class="price">249.99</h1>
+                            <span class="currency yearly">£</span><h1 class="price yearly">249.99</h1>
+                            <span class="currency monthly">£</span><h1 class="price monthly">24.99</h1>
                         </div>
                     </div>
                     <div class="row info-row">
@@ -94,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 outer">
                 <div class="card master">
                     <div class="row label-row">
                         <div class="col-12">
@@ -103,7 +105,8 @@
                     </div>
                     <div class="row price-row">
                         <div class="col-12">
-                            <span class="currency">£</span><h1 class="price">399.99</h1>
+                            <span class="currency yearly">£</span><h1 class="price yearly">399.99</h1>
+                            <span class="currency monthly">£</span><h1 class="price monthly">39.99</h1>
                         </div>
                     </div>
                     <div class="row info-row">
@@ -130,6 +133,7 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

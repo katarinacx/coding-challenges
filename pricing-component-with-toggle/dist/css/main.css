@@ -137,7 +137,7 @@ h3 {
 
   .price {
     color: #494c5f;
-    font-size: 69px;
+    font-size: 65px;
     display: inline;
   }
 
@@ -191,10 +191,72 @@ h3 {
   
   .card.professional .learn-more {
     background: #fff;
+    transition: all 0.4s;
   }
 
   .card.professional .learn-more span {
     background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .card.professional .learn-more::before {
+    opacity: 0;
+  }
+
+  .card.professional .learn-more:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+
+  .card.professional .learn-more:hover span {
+    background-image: linear-gradient(#fff, #fff);
+  }
+
+  @media(max-width: 360px) {
+    .price {
+      font-size: 57px;
+    }
+
+    .price-row {
+      margin-bottom: 20px;
+    }
+
+    .currency {
+      line-height: 73px;
+    }
+  }
+
+  @media(min-width: 768px) {
+    .card {
+      height: 100%;
+    }
+
+    .outer, .inner {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .outer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .card.professional {
+      padding-top: 60px;
+    }
+  }
+
+  @media(min-width: 768px) and (max-width: 990px){
+    .price {
+      font-size: 43px;
+    }
+
+    .price-row {
+      margin-bottom: 20px;
+    }
+
+    .currency {
+      line-height: 55px;
+    }
   }

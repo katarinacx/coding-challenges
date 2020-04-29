@@ -1,2 +1,10 @@
-//Need to import the $ function from jquery so I can use it in this file. This is due to webpack compiler and ES6.
-import $ from "jquery";
+$(document).ready(init);
+
+function init() {
+    $('.monthly').hide();
+}
+
+window.togglePriceType = function() {
+    $('.monthly').toggle();
+    $('.yearly').toggle();
+}

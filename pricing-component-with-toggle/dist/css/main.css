@@ -248,6 +248,12 @@ h3 {
     .card.professional {
       padding-top: 60px;
     }
+
+    body {
+      background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+      background-position: right -198px top -30px, left -100px bottom -30px;
+      background-repeat: no-repeat;
+    }
   }
 
   @media(min-width: 768px) and (max-width: 990px){

@@ -1,0 +1,43 @@
+body {
+    
+}
+
+section, footer {
+    border-bottom: 3px solid black;
+}
+
+.nav {
+    height: 60px;
+    padding: 5px 15px;
+    display: block;
+    background-color: #ccc;
+}
+
+nav .logo {
+    float: left;
+    background-color: red;
+    height: 100%;
+    width: 100px;
+}
+
+nav .links {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+}
+
+.humanizing .image {
+    display: none;
+    height: 100px;
+    background-color: purple;
+}
+
+@media (min-width: 576px) {
+    .hero {
+        display: none;
+    }
+    
+    .humanizing .image {
+        display: block;
+    }
+}

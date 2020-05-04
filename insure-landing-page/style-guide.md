@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Dark Violet: hsl(256, 26%, 20%)
+- Dark Violet: hsl(256, 26%, 20%) #2d2640
 - Grayish Blue: hsl(216, 30%, 68%)
 
 ### Neutral

@@ -10,7 +10,7 @@
     "author": "Tarin",
     "license": "ISC",
     "dependencies": {
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.0",
         "jshint": "^2.11.0",
         "server": "^1.0.27"
     },

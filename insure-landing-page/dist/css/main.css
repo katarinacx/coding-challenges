@@ -1,9 +1,9 @@
 body {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
-section,
 footer {
     border-bottom: 3px solid black;
     padding: 0px;
@@ -39,12 +39,70 @@ nav .links {
 
 .humanizing .content {
     color: #fff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.humanizing .content h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.humanizing .content p {
+    padding-bottom: 10px;
+    color: #fafafa;
+}
+
+.humanizing .content button {
+    padding: 7px 20px;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+    color: #fafafa;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.humanizing .content button:focus {
+    outline: 0;
 }
 
 .humanizing .image {
     display: none;
-    height: 100px;
-    background-color: purple;
+}
+
+.different {
+    text-align: center;
+}
+
+.different .title hr {
+    height: 1px;
+    background-color: #837d87;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+.different .title h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.different .snappy-process img,
+.different .affordable-prices img,
+.different .people-first img {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.different .snappy-process h3,
+.different .affordable-prices h3,
+.different .people-first h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 576px) {
@@ -52,6 +110,8 @@ nav .links {
         display: none;
     }
     .humanizing .image {
-        display: block;
+        display: inline-block;
+        width: 100%;
+        height: auto;
     }
 }

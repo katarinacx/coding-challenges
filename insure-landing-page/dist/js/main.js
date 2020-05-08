@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// console.log($('#hello'));\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("window.openNav = function() {\r\n    $('.menu-items').toggle();\r\n\r\n    if ($('.menu-items').css('display') != 'none') {\r\n        $('#hamburger').attr('src', '../images/icon-close.svg');\r\n    } else {\r\n        $('#hamburger').attr('src', '../images/icon-hamburger.svg');\r\n    }\r\n};\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ })
 

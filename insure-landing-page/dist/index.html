@@ -11,8 +11,22 @@
 <body>
     <nav class="nav">
         <div class="logo"><img src="../images/logo.svg"></div>
-        <div class="links"><img src="../images/icon-hamburger.svg"></div>
+        <div class="links"><img id="hamburger" onclick="window.openNav();" src="../images/icon-hamburger.svg"></div>
     </nav>
+    <ul class="menu-items">
+        <div class="col-12">
+            <li>HOW WE WORK</li>
+        </div>
+        <div class="col-12">
+            <li>BLOG</li>
+        </div>
+        <div class="col-12">
+            <li>ACCOUNT</li>
+        </div>
+        <div class="col-12">
+            <li>VIEW PLANS</li>
+        </div>
+    </ul>
     <section class="hero">
         <div class="col-12 px-0"><img src="../images/image-intro-mobile.jpg"></div>
     </section>
@@ -51,12 +65,51 @@
     </section>
     <section class="find-out">
         <div class="row mx-0">
-            <div class="col-12"></div>
+            <div class="col-12 outer-find-out">
+                <div class="col-12 inner-find-out">
+                    <h1>Find out more about how we work</h1>
+                    <button type="button">HOW WE WORK</button>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
+    <footer class="footer">
         <div class="row mx-0">
-            <div class="col-12"></div>
+            <div class="col-12 col-md-6 logo"><img src="../images/logo.svg"></div>
+            <div class="col-12 col-md-6 social-media"><img class="links" src="../images/icon-facebook.svg"><img class="links" src="../images/icon-twitter.svg"><img class="links" src="../images/icon-pinterest.svg"><img class="links" src="../images/icon-instagram.svg"></div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-12 divider">
+                <hr>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-12 col-md-3 our-company">
+                <div class="title">Our Company</div>
+                <div class="links">How we work</div>
+                <div class="links">Why insure?</div>
+                <div class="links">Check price</div>
+                <div class="links">Reviews</div>
+            </div>
+            <div class="col-12 col-md-3 help-me">
+                <div class="title">Help Me</div>
+                <div class="links">FAQ</div>
+                <div class="links">Terms of use</div>
+                <div class="links">Privacy Policy</div>
+                <div class="links">Cookies</div>
+            </div>
+            <div class="col-12 col-md-3 contact">
+                <div class="title">Contact</div>
+                <div class="links">Sales</div>
+                <div class="links">Support</div>
+                <div class="links">Live chat</div>
+            </div>
+            <div class="col-12 col-md-3 others">
+                <div class="title">Others</div>
+                <div class="links">Careers</div>
+                <div class="links">Press</div>
+                <div class="links">Licenses</div>
+            </div>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>

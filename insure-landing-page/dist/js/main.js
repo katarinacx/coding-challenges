@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("window.openNav = function() {\r\n    $('.menu-items').toggle();\r\n\r\n    if ($('.menu-items').css('display') != 'none') {\r\n        $('#hamburger').attr('src', '../images/icon-close.svg');\r\n    } else {\r\n        $('#hamburger').attr('src', '../images/icon-hamburger.svg');\r\n    }\r\n};\n\n//# sourceURL=webpack:///./js/main.js?");
+eval("window.openNav = function() {\r\n    $('.menu-items').slideToggle(200, updateHamburger);\r\n};\r\n\r\nfunction updateHamburger() {\r\n    if ($('.menu-items').css('display') != 'none') {\r\n        $('#hamburger').attr('src', '../images/icon-close.svg');\r\n        $('.menu-items').css('background-image', 'url(../images/bg-pattern-mobile-nav.svg)');\r\n        $('body').css('overflow-y', 'hidden');\r\n    } else {\r\n        $('#hamburger').attr('src', '../images/icon-hamburger.svg');\r\n        $('.menu-items').css('background-image', 'none');\r\n        $('body').css('overflow-y', 'scroll');\r\n    }\r\n}\n\n//# sourceURL=webpack:///./js/main.js?");
 
 /***/ })
 

@@ -91,7 +91,11 @@ nav .links img {
 .humanizing .content {
     color: #fff;
     text-align: center;
-    padding: 70px 20px;
+    padding: 70px 23px;
+}
+
+.humanizing .content hr {
+    display: none;
 }
 
 .humanizing .content h1 {
@@ -149,8 +153,8 @@ nav .links img {
 .different .snappy-process,
 .different .affordable-prices,
 .different .people-first {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
 .different .snappy-process img,
@@ -265,6 +269,11 @@ nav .links img {
     padding-bottom: 70px;
 }
 
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 @media (min-width: 576px) {
     .hero {
         display: none;
@@ -279,6 +288,13 @@ nav .links img {
 }
 
 @media (min-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    body {
+        font-size: 15px;
+    }
     .nav {
         position: relative;
     }
@@ -308,7 +324,25 @@ nav .links img {
     .humanizing .content {
         color: #fff;
         text-align: left;
-        padding: 70px 0px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 40px;
+        padding-left: 0;
+    }
+    .humanizing .content hr {
+        display: block;
+        margin-right: 380px;
+        background-color: #fff;
+        margin-bottom: 4rem;
+    }
+    .humanizing .content h1 {
+        font-size: 70px;
+        line-height: 65px;
+        margin-bottom: 25px;
+    }
+    .humanizing .content button {
+        font-size: 14px;
+        padding: 7px 22px;
     }
     .humanizing .image {
         float: right;
@@ -317,4 +351,37 @@ nav .links img {
     .humanizing img {
         float: right;
     }
+    .different {
+        text-align: left;
+    }
+    .different .title hr {
+        margin-left: 0px;
+        margin-right: 900px;
+        margin-bottom: 50px;
+    }
+    .different .title h1 {
+        font-size: 70px;
+    }
+    .different .snappy-process img,
+    .different .affordable-prices img,
+    .different .people-first img {
+        margin-bottom: 10px;
+    }
+    .different .snappy-process h3,
+    .different .affordable-prices h3,
+    .different .people-first h3 {
+        font-size: 27px;
+    }
+    .find-out .outer-find-out {
+        padding: 120px 20px;
+    }
+    .find-out .inner-find-out {
+        text-align: left;
+        padding: 60px 70px;
+    }
+    .find-out .inner-find-out h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+    .find-out .inner-find-out button {}
 }

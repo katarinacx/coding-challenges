@@ -51,7 +51,8 @@ nav .links img {
     top: 60px;
     padding-top: 40px;
     background-repeat: no-repeat;
-    background-position: -32px bottom;
+    background-position: center bottom;
+    background-size: contain;
 }
 
 .menu-items li {
@@ -139,8 +140,7 @@ nav .links img {
 .different .title hr {
     height: 1px;
     background-color: #837d87;
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 150px;
     margin-bottom: 30px;
 }
 
@@ -223,6 +223,7 @@ nav .links img {
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 1px;
+    padding-bottom: 40px;
 }
 
 .footer .logo {
@@ -256,17 +257,17 @@ nav .links img {
     padding-bottom: 30px;
 }
 
+.footer a {
+    display: inline-block;
+}
+
 .footer .links {
     color: #2d2640
 }
 
-.footer .links:hover {
+.footer a:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-
-.others .links:last-child {
-    padding-bottom: 70px;
 }
 
 .container {
@@ -274,13 +275,27 @@ nav .links img {
     padding-right: 0;
 }
 
+@media (min-width: 563px) {
+    .humanizing {
+        height: 450px;
+        background: linear-gradient(180deg, #2d2640 80%, #fff 20%);
+    }
+}
+
 @media (min-width: 576px) {
+    .nav {
+        position: relative;
+    }
+    .humanizing {
+        height: 600px;
+    }
     .hero {
         display: none;
     }
     .humanizing .image {
         display: inline-block;
         height: auto;
+        align-self: center;
     }
     .humanizing img {
         max-width: 100%;
@@ -288,6 +303,62 @@ nav .links img {
 }
 
 @media (min-width: 768px) {
+    .nav .links {
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        float: right;
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #837d87;
+        cursor: pointer;
+        transition: color 0.5s ease;
+    }
+    .nav-links:hover {
+        color: #2d2640;
+    }
+    .nav-links.view-plans {
+        margin-left: 40px;
+        color: #2d2640;
+        border: 2px solid #2d2640;
+        padding: 5px 20px;
+        margin-top: 9px;
+        transition: all 0.5s ease;
+    }
+    .nav-links.view-plans:hover {
+        background-color: #2d2640;
+        color: #fff;
+    }
+    .humanizing .image {
+        margin-top: 20px;
+    }
+    .humanizing .content {
+        align-self: center;
+        padding-right: 59px;
+    }
+    .find-out .inner-find-out {
+        padding-left: 50px;
+    }
+    .find-out .inner-find-out h1 {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .find-out .inner-find-out .how-we-work {
+        align-self: center;
+    }
+    .footer {
+        text-align: left;
+    }
+    .footer .social-media {
+        text-align: right;
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 992px) {
     .container {
         padding-left: 15px;
         padding-right: 15px;
@@ -303,9 +374,14 @@ nav .links img {
         float: right;
         margin-top: 15px;
         margin-left: 30px;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 700;
         color: #837d87;
+        cursor: pointer;
+        transition: color 0.5s ease;
+    }
+    .nav-links:hover {
+        color: #2d2640;
     }
     .nav-links.view-plans {
         margin-left: 40px;
@@ -313,6 +389,11 @@ nav .links img {
         border: 2px solid #2d2640;
         padding: 5px 20px;
         margin-top: 9px;
+        transition: all 0.5s ease;
+    }
+    .nav-links.view-plans:hover {
+        background-color: #2d2640;
+        color: #fff;
     }
     nav .links {
         display: none;
@@ -328,6 +409,7 @@ nav .links img {
         padding-bottom: 70px;
         padding-right: 40px;
         padding-left: 0;
+        align-self: auto;
     }
     .humanizing .content hr {
         display: block;
@@ -336,7 +418,7 @@ nav .links img {
         margin-bottom: 4rem;
     }
     .humanizing .content h1 {
-        font-size: 70px;
+        font-size: 61px;
         line-height: 65px;
         margin-bottom: 25px;
     }
@@ -347,6 +429,7 @@ nav .links img {
     .humanizing .image {
         float: right;
         padding-top: 80px;
+        margin-top: 0;
     }
     .humanizing img {
         float: right;
@@ -377,11 +460,44 @@ nav .links img {
     }
     .find-out .inner-find-out {
         text-align: left;
-        padding: 60px 70px;
+        padding: 60px 75px;
     }
     .find-out .inner-find-out h1 {
-        font-size: 45px;
+        font-size: 40px;
+        line-height: 52px;
         margin-bottom: 0;
     }
-    .find-out .inner-find-out button {}
+    .find-out .inner-find-out .how-we-work {
+        text-align: right;
+        align-self: auto;
+    }
+    .find-out .inner-find-out button {
+        margin-top: 30px;
+        font-size: 14px;
+    }
+    .footer {
+        text-align: left;
+        font-size: 14px;
+    }
+    .footer .social-media {
+        text-align: right;
+        padding-top: 80px;
+    }
+    .footer .title {
+        color: #837d87;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .footer .links {
+        line-height: 30px;
+    }
+    @media (min-width: 1200px) {
+        .humanizing .content h1 {
+            font-size: 70px;
+        }
+        .find-out .inner-find-out h1 {
+            margin-right: 10px;
+            font-size: 50px;
+        }
+    }
 }

@@ -1,5 +1,33 @@
+nav {
+    background-image: url(../images/bg-header-mobile.svg);
+    background-color: #5ba4a4;
+    height: 150px;
+    width: 100%;
+}
+
 body {
     font-size: 15x;
     font-family: 'Spartan', sans-serif;
     font-weight: 500;
+    background-color: #effafa;
+}
+
+.job-card {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.job-card.featured{
+    background: linear-gradient(90deg, #5ba4a4 5px, #fff 0px);
+}
+
+.box-shadow {
+    box-shadow: 0px 14px 27px -10px rgba(129,140,161,0.4);
+}
+
+.job-card .details {
+
 }

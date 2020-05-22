@@ -1,7 +1,20 @@
 window.jobs = [
     {
+        company_image : "../images/",
         company: "Photosnap",
-        title: "Senior Frontend Developer"
+        new: true,
+        featured: true,
+        title: "Senior Frontend Developer",
+        date: "1d ago",
+        type: "Full Time",
+        location: "USA Only",
+        tags: [
+            "Frontend", 
+            "Senior",
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
     },
     {
         company: "Manage",

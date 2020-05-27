@@ -63,7 +63,7 @@ body {
 .job-card .details .pill.new {
     background-color: #5ba4a4;
     color: #fff;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .job-card .details .pill.featured {
@@ -92,6 +92,7 @@ body {
 
 .job-card hr {
     border-top: 1px solid #7b8e8e;
+    width: 100%;
 }
 
 .job-card .tags {
@@ -100,7 +101,7 @@ body {
 
 .job-card .tags span {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     color: #5ba4a4;
     font-weight: 700;
     font-size: 13px;
@@ -108,4 +109,35 @@ body {
     padding: 6px 10px 5px 10px;
     border-radius: 3px;
     margin-bottom: 15px;
+}
+
+@media (min-width: 450px) {
+    nav {
+        background-image: url(../images/bg-header-desktop.svg);
+    }
+}
+
+@media (min-width: 768px) {
+    .job-card {
+        padding: 20px 20px 20px 25px;
+    }
+    .job-card hr {
+        display: none;
+    }
+    .job-card .tags {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .job-card .tags {
+        padding-right: 10px;
+        padding-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .job-card .tags span {
+        margin-bottom: 0;
+    }
 }

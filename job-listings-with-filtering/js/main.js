@@ -187,7 +187,9 @@ function buildListingHTML() {
     for (var i = 0; i < window.jobs.length; i++) {
         //Declares a variable called job and sets it to the i index of the window.jobs array (a job object)
         var job = window.jobs[i];
-
+        if(checkJobFilters(job.tags) === false){
+           continue; 
+        }
         //Appending the job listing html to the variable we set earlier in the function 
         html += '<div class="row">' +
                     '<div class="col-12">' +
@@ -212,6 +214,10 @@ function buildListingHTML() {
 
     //Returns the html variable 
     return html;
+}
+
+function checkJobFilters(){
+    return true;
 }
 
 function buildCompanyImageHTML(image){
@@ -261,7 +267,7 @@ function buildTagsHTML(tags){
     var html = "";
     
     for(var i = 0; i < tags.length; i++){
-        html += " <span>" + tags[i] + "</span>";
+        html += "<span onclick=\"console.log('" + tags[i] + "');\">" + tags[i] + "</span>";
     }
 
     return html;

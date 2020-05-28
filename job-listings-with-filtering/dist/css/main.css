@@ -111,6 +111,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 @media (min-width: 450px) {
     nav {
         background-image: url(../images/bg-header-desktop.svg);
@@ -130,6 +131,18 @@ body {
 }
 
 @media (min-width: 992px) {
+    .job-card .details h7 {
+        margin-top: 0px;
+    }
+    .job-card .details img {
+        left: 0px;
+        top: 0px;
+        width: 88px;
+        position: relative;
+        float: left;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
     .job-card .tags {
         padding-right: 10px;
         padding-top: 0;
@@ -140,4 +153,27 @@ body {
     .job-card .tags span {
         margin-bottom: 0;
     }
+}
+
+@media (min-width: 1200px){
+    .job-card {
+        padding: 25px 25px 25px 25px;
+    }
+    .job-card .details h7 {
+        font-size: 15px;
+    } 
+    .job-card .details .pill {
+        font-size: 12px;
+    }
+    .job-card .details h6 {
+        font-size: 18px;
+    }
+    .job-card .details .info {
+        font-size: 15px;
+    }
+    .job-card .tags span {
+        font-size: 14px;
+    }
+
+
 }
